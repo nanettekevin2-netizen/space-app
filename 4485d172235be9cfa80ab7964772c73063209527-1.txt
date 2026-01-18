@@ -1,0 +1,867 @@
+diff --git a/config/patches/gitlab-exporter/add-license-file.patch b/config/patches/gitlab-exporter/add-license-file.patch
+index 36ef2f8182282da97afffb5c6c76624dc38d159f..1f9bfcd287f2e673bef1b504c6781bb191445f78 100644
+--- a/config/patches/gitlab-exporter/add-license-file.patch
++++ b/config/patches/gitlab-exporter/add-license-file.patch
+@@ -4,7 +4,7 @@ index 0000000..4abe8b8
+ --- /dev/null
+ +++ b/LICENSE
+ @@ -0,0 +1,25 @@
+-+Copyright (c) 2011-2017 GitLab B.V.
+++Copyright (c) 2011-2017 GitLab Inc.
+ +
+ +With regard to the GitLab Software:
+ +
+diff --git a/config/projects/gitlab.rb b/config/projects/gitlab.rb
+index 80c7ad6f05262f0bc3810677a0349ade84218800..2da9fcb90d246300603b3179bc1319d4df6e2f94 100644
+--- a/config/projects/gitlab.rb
++++ b/config/projects/gitlab.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2013, 2014 GitLab.com
++## Copyright:: Copyright (c) 2013, 2014 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/alertmanager.rb b/config/software/alertmanager.rb
+index eab2971fbb58c9c75e4e8b4183eab2b139df49c5..a643f23ef519794aadedd7508791c17f03eaee34 100644
+--- a/config/software/alertmanager.rb
++++ b/config/software/alertmanager.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2018 GitLab.com
++## Copyright:: Copyright (c) 2018 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/docker-distribution-pruner.rb b/config/software/docker-distribution-pruner.rb
+index aaf263de564e0d1269cb25287163c1a6db312ce2..47bde8d0762c63f2210f4a8ca3492a8a0ebfec73 100644
+--- a/config/software/docker-distribution-pruner.rb
++++ b/config/software/docker-distribution-pruner.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2019 GitLab B.V.
++# Copyright:: Copyright (c) 2019 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/git.rb b/config/software/git.rb
+index 95d4012e32d84a754327af15276f9e6f95c9df68..7ed849d675867c55304a1acdcc7f860040ca7934 100644
+--- a/config/software/git.rb
++++ b/config/software/git.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2014 GitLab.com
++## Copyright:: Copyright (c) 2014 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/gitlab-config-template.rb b/config/software/gitlab-config-template.rb
+index 9289b09fc0906b3435d0cae657849c25350fc529..f7f303369e96e1936e3048782591862867942373 100644
+--- a/config/software/gitlab-config-template.rb
++++ b/config/software/gitlab-config-template.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/gitlab-cookbooks.rb b/config/software/gitlab-cookbooks.rb
+index 9290eeb5e549c39a19eaf8f7aaa3c7beb76fe53e..0f8d60e4f96cae41719ab4d49a467158a64ec647 100644
+--- a/config/software/gitlab-cookbooks.rb
++++ b/config/software/gitlab-cookbooks.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/gitlab-ctl.rb b/config/software/gitlab-ctl.rb
+index 025c164d5a806588c02c6302894d66e87cae9e6d..ed99a5271506003823cdc1894fbd6cb9af34a91b 100644
+--- a/config/software/gitlab-ctl.rb
++++ b/config/software/gitlab-ctl.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+@@ -36,7 +36,7 @@ build do
+ #!/bin/bash
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/gitlab-pages.rb b/config/software/gitlab-pages.rb
+index b93d8966bfd98c727f0b55e5887060480c07c3cd..0c7f3c1b0c4497d38ad03bbd18ee6a40aa0db2e3 100644
+--- a/config/software/gitlab-pages.rb
++++ b/config/software/gitlab-pages.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2016 GitLab B.V.
++# Copyright:: Copyright (c) 2016 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/gitlab-scripts.rb b/config/software/gitlab-scripts.rb
+index ebeae033e9a1e71f2b6f96f9ceb8e05322b059f8..09af491d202f587688c20826f5c89dbe0c42865e 100644
+--- a/config/software/gitlab-scripts.rb
++++ b/config/software/gitlab-scripts.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/gitlab-selinux.rb b/config/software/gitlab-selinux.rb
+index 9588bcf4dcde2fd32e651c85d7c9f9776d48ddd1..7fe7066ce528bfed900cbca4e939d965b3f58ef6 100644
+--- a/config/software/gitlab-selinux.rb
++++ b/config/software/gitlab-selinux.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/gitlab-shell.rb b/config/software/gitlab-shell.rb
+index a5cbea72172d91c1c45b9aeccf132df22d8559d3..862d1ef9675fc22ae3eea09ca79814a8e2426111 100644
+--- a/config/software/gitlab-shell.rb
++++ b/config/software/gitlab-shell.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2014 GitLab.com
++## Copyright:: Copyright (c) 2014 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/go-crond.rb b/config/software/go-crond.rb
+index 1b4de452c7a76e2817ee80ecb28ac242942f8636..9a359b5d4a4bf99ce99b284c3568b6d718e1ae0d 100644
+--- a/config/software/go-crond.rb
++++ b/config/software/go-crond.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright 2018 GitLab
++# Copyright 2018 GitLab Inc.
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+diff --git a/config/software/krb5.rb b/config/software/krb5.rb
+index 4d53d5d140657abf7e08e4a06fea6a629b3f9d49..5191d06040bca6d4f347f8d9c3f2032a0f92d851 100644
+--- a/config/software/krb5.rb
++++ b/config/software/krb5.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/libicu.rb b/config/software/libicu.rb
+index 9376ebdca2e1ef53fd484dc557816e0fc4b53637..96e4f91bf6bca6a3ea38bfe4b130827e6055dce5 100644
+--- a/config/software/libicu.rb
++++ b/config/software/libicu.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2014 GitLab B.V.
++## Copyright:: Copyright (c) 2014 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/mattermost.rb b/config/software/mattermost.rb
+index a937e34887179ddcde89560fee65162c15a0cf7d..bc43b06c96ac9dc092a090f139b5e650268a9e41 100644
+--- a/config/software/mattermost.rb
++++ b/config/software/mattermost.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2015 GitLab B.V.
++## Copyright:: Copyright (c) 2015 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/nginx-module-vts.rb b/config/software/nginx-module-vts.rb
+index d31be271dfa29b403ef51dec1fc47e5946638ae4..53e62d2faa3403517f6a30af72a0fe00f224e8e7 100644
+--- a/config/software/nginx-module-vts.rb
++++ b/config/software/nginx-module-vts.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012-2014 Chef Software, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/nginx.rb b/config/software/nginx.rb
+index c55ff8bf3994b04acfb4373ca71195b9158e3b5b..09b223613351cf93bd0e1c884403a67dbc941cbd 100644
+--- a/config/software/nginx.rb
++++ b/config/software/nginx.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012-2014 Chef Software, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/ngx_security_headers.rb b/config/software/ngx_security_headers.rb
+index 2c3c3c9817432f642b34e79b247d367126400574..ccfb4b763b436e145ff15c8dd4f3e2167b946e1c 100644
+--- a/config/software/ngx_security_headers.rb
++++ b/config/software/ngx_security_headers.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012-2014 Chef Software, Inc.
+-# Copyright:: Copyright (c) 2021 GitLab B.V.
++# Copyright:: Copyright (c) 2021 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/package-scripts.rb b/config/software/package-scripts.rb
+index 6b924f57a47b3b3472e2c6a7c6e749a692a72cab..7bb07166a972d327917617434e7bbc10504cc81d 100644
+--- a/config/software/package-scripts.rb
++++ b/config/software/package-scripts.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2015 GitLab.com
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/pgbouncer-exporter.rb b/config/software/pgbouncer-exporter.rb
+index ea3d762d8373d621a1bc1d0c29ce61cb5056586f..f2ca7537a1c0f438e23986c5a6bf89d9831d6b9e 100644
+--- a/config/software/pgbouncer-exporter.rb
++++ b/config/software/pgbouncer-exporter.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2018 GitLab.com
++## Copyright:: Copyright (c) 2018 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/prometheus.rb b/config/software/prometheus.rb
+index f9cf38f003a703a2f4b763f541189a2622b6e65f..a81d68fa4e1998feea378603985fef43ca56d429 100644
+--- a/config/software/prometheus.rb
++++ b/config/software/prometheus.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2014 GitLab.com
++## Copyright:: Copyright (c) 2014 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/python3.rb b/config/software/python3.rb
+index 88b7bec75d66be4499f79cd429882c09bc8b199c..b0b9ee718432608073339d12df1a59092247741d 100644
+--- a/config/software/python3.rb
++++ b/config/software/python3.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2013-2014 Chef Software, Inc.
+-# Copyright:: Copyright (c) 2016-2021 GitLab B.V.
++# Copyright:: Copyright (c) 2016-2021 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/config/software/redis-exporter.rb b/config/software/redis-exporter.rb
+index 2f11667977c47f92ca7af3627714762ed73aa45a..ef78d5e6f57968d6c8177a124a7fc5287bae3f37 100644
+--- a/config/software/redis-exporter.rb
++++ b/config/software/redis-exporter.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2014 GitLab.com
++## Copyright:: Copyright (c) 2014 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the 'License');
+diff --git a/config/templates/gitlab-cookbooks/cookbook_packages_default.erb b/config/templates/gitlab-cookbooks/cookbook_packages_default.erb
+index b6e96fdb3c11d90d9a723cbec52f28a0a5087ecf..caf25cb25f6cce275aff3ad8d2033e43c424f91d 100644
+--- a/config/templates/gitlab-cookbooks/cookbook_packages_default.erb
++++ b/config/templates/gitlab-cookbooks/cookbook_packages_default.erb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitaly/recipes/disable.rb b/files/gitlab-cookbooks/gitaly/recipes/disable.rb
+index 084d3c63abf25a44e489d03cee2c0f4be530aff8..bf9d5719f2f334aaa903c66bbf0b42f094458762 100644
+--- a/files/gitlab-cookbooks/gitaly/recipes/disable.rb
++++ b/files/gitlab-cookbooks/gitaly/recipes/disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2016 GitLab B.V.
++# Copyright:: Copyright (c) 2016 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab-ee/libraries/gitlab-ee.rb b/files/gitlab-cookbooks/gitlab-ee/libraries/gitlab-ee.rb
+index 2f91d2326d240a89b0ce22a6d91e8693dc4b159b..2a9076bc152ea00ea0fc7ad4b67c4efb1ab9d75a 100644
+--- a/files/gitlab-cookbooks/gitlab-ee/libraries/gitlab-ee.rb
++++ b/files/gitlab-cookbooks/gitlab-ee/libraries/gitlab-ee.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2016 GitLab B.V.
++# Copyright:: Copyright (c) 2016 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab-pages/recipes/disable.rb b/files/gitlab-cookbooks/gitlab-pages/recipes/disable.rb
+index 4a67ab9393f1d771256b96521ae682ffc35f4f83..63a61a1a3a8c3684f232a1c0222458ddba321157 100644
+--- a/files/gitlab-cookbooks/gitlab-pages/recipes/disable.rb
++++ b/files/gitlab-cookbooks/gitlab-pages/recipes/disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2016 GitLab B.V.
++# Copyright:: Copyright (c) 2016 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab-pages/recipes/enable.rb b/files/gitlab-cookbooks/gitlab-pages/recipes/enable.rb
+index 08b3421a37b7430d33c81078d7441bbb63f8d65b..7c760486f011788ebdc62532356f7ac8f9b36625 100644
+--- a/files/gitlab-cookbooks/gitlab-pages/recipes/enable.rb
++++ b/files/gitlab-cookbooks/gitlab-pages/recipes/enable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2016 GitLab B.V.
++# Copyright:: Copyright (c) 2016 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/attributes/default.rb b/files/gitlab-cookbooks/gitlab/attributes/default.rb
+index 0c064b322e85e2936f29878c07253c87862d332b..8a9d022cc140eae10470b20d303d446778c80f71 100644
+--- a/files/gitlab-cookbooks/gitlab/attributes/default.rb
++++ b/files/gitlab-cookbooks/gitlab/attributes/default.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/libraries/account_helper.rb b/files/gitlab-cookbooks/gitlab/libraries/account_helper.rb
+index eb3877262084bd85e6e9cdabc0381e538ff29f5b..ad4db8ad154e64c91db0f27075fa969ce2bc2615 100644
+--- a/files/gitlab-cookbooks/gitlab/libraries/account_helper.rb
++++ b/files/gitlab-cookbooks/gitlab/libraries/account_helper.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/libraries/helper.rb b/files/gitlab-cookbooks/gitlab/libraries/helper.rb
+index 29e64b8193e8c9e06baaf784134c5b9b18a2c7f5..7338a73fbeb7b2453ac71d1f04a6b545853fa81d 100644
+--- a/files/gitlab-cookbooks/gitlab/libraries/helper.rb
++++ b/files/gitlab-cookbooks/gitlab/libraries/helper.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/libraries/logfiles_helper.rb b/files/gitlab-cookbooks/gitlab/libraries/logfiles_helper.rb
+index b6391207e72fc2f40eb209005b2151c5f98de2e4..1019219a5c75196ff5ef5efc04ea84fd8c6b7f7c 100644
+--- a/files/gitlab-cookbooks/gitlab/libraries/logfiles_helper.rb
++++ b/files/gitlab-cookbooks/gitlab/libraries/logfiles_helper.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/bootstrap.rb b/files/gitlab-cookbooks/gitlab/recipes/bootstrap.rb
+index f576d654da82204d056ec64fa8aeb411b11adc65..a468eb8ed156c451a4922c1cd7fac2674b6bf6af 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/bootstrap.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/bootstrap.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/config.rb b/files/gitlab-cookbooks/gitlab/recipes/config.rb
+index 4e747cbe96fa440406b7429dfa606b0206b3fa39..287a867bed864e095a68252f48cf1740b43af69d 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/config.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/config.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2016 GitLab B.V.
++# Copyright:: Copyright (c) 2016 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/database_migrations.rb b/files/gitlab-cookbooks/gitlab/recipes/database_migrations.rb
+index a269c50b38b916bea17cfb7e3d99a7a43bc84573..1178e0063556a948e7db17c6c266b7204ce1baa0 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/database_migrations.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/database_migrations.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/database_reindexing_disable.rb b/files/gitlab-cookbooks/gitlab/recipes/database_reindexing_disable.rb
+index 342974bce6a8255cc3103dbf68242a3af2b30196..d303b70b4510ecca038e5ab64ba1f101b4f9bbaf 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/database_reindexing_disable.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/database_reindexing_disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2020 GitLab B.V.
++# Copyright:: Copyright (c) 2020 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/database_reindexing_enable.rb b/files/gitlab-cookbooks/gitlab/recipes/database_reindexing_enable.rb
+index 8cd15cf55b558ed1bfcd2b9f38accd7564a669fe..bc5f444dac4927aba8629b3c6325bea1f5d45c64 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/database_reindexing_enable.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/database_reindexing_enable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2020 GitLab B.V.
++# Copyright:: Copyright (c) 2020 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/default.rb b/files/gitlab-cookbooks/gitlab/recipes/default.rb
+index ae678c5158de000935ac4b62f806aefda02ae4f7..2b09bee8017c3a433782f555fd9e978cb3fc13f9 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/default.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/default.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/gitlab-rails.rb b/files/gitlab-cookbooks/gitlab/recipes/gitlab-rails.rb
+index 5bc913bd4153e5f1691b113e8cd3ee936b56eb9c..839c6d036b4cda2db6fe69f36b180436aac8de24 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/gitlab-rails.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/gitlab-rails.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/gitlab-shell.rb b/files/gitlab-cookbooks/gitlab/recipes/gitlab-shell.rb
+index 43f4d5368248e25071a3eeac9c7d724c04062cde..19b38271988ae0d8133fc3c92966502c7bad1af4 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/gitlab-shell.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/gitlab-shell.rb
+@@ -1,5 +1,5 @@
+ #
+-## Copyright:: Copyright (c) 2014 GitLab.com
++## Copyright:: Copyright (c) 2014 GitLab Inc.
+ ## License:: Apache License, Version 2.0
+ ##
+ ## Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/gitlab-workhorse.rb b/files/gitlab-cookbooks/gitlab/recipes/gitlab-workhorse.rb
+index d5bb8954c395805fc1fd5076faadc8f788e813e8..e6841c0a1a8ed286b1aed37a7b7ad7041d8a52d8 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/gitlab-workhorse.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/gitlab-workhorse.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/gitlab-workhorse_disable.rb b/files/gitlab-cookbooks/gitlab/recipes/gitlab-workhorse_disable.rb
+index a7bd945ec9fabaeaad6d97b0df6bf3ce16171462..d5326e4e5eb1a1cc8803c875e4c480d7270e5189 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/gitlab-workhorse_disable.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/gitlab-workhorse_disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/mailroom.rb b/files/gitlab-cookbooks/gitlab/recipes/mailroom.rb
+index be35b42f11a7782bccb2d63026ef6e0f6f2f7c0f..9586694764a1758cb89bc65b99fe13169158a83e 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/mailroom.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/mailroom.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/mailroom_disable.rb b/files/gitlab-cookbooks/gitlab/recipes/mailroom_disable.rb
+index 1b82480ba3fce8650c3413fc041ab778e3ec8346..271ce365a841f7b1d4277022aa78754ae788d362 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/mailroom_disable.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/mailroom_disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/nginx.rb b/files/gitlab-cookbooks/gitlab/recipes/nginx.rb
+index b9049dc2303db31034c183bcd9431b90f357aaaa..6e706630cda4e55cd6e5ada893a8d11b4b0602a5 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/nginx.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/nginx.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/puma.rb b/files/gitlab-cookbooks/gitlab/recipes/puma.rb
+index f60b9abb172e9b4ff9985e1cf382c0bd2158c5bc..c9bc3be9588d044abaa052b257d46a1f3b037677 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/puma.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/puma.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2018 GitLab.com
++# Copyright:: Copyright (c) 2018 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/puma_disable.rb b/files/gitlab-cookbooks/gitlab/recipes/puma_disable.rb
+index a113c74abf2e50ebcc884499b04e87580930c9d6..d022ac0bb885615a7b0ff679dc20f4564176ea11 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/puma_disable.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/puma_disable.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/remote-syslog.rb b/files/gitlab-cookbooks/gitlab/recipes/remote-syslog.rb
+index 41acbfe29c6ae197558835feb29324f50c60ccb0..6a2001b971a9d9d6ed83357c97d87c7befd31223 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/remote-syslog.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/remote-syslog.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/remote-syslog_disable.rb b/files/gitlab-cookbooks/gitlab/recipes/remote-syslog_disable.rb
+index 30a42c20be3b207ba5933415d8a4461ac95dfe8e..65294df88f21827fd0a5e3639f828b5fb32e3fd0 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/remote-syslog_disable.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/remote-syslog_disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/remove_accounts.rb b/files/gitlab-cookbooks/gitlab/recipes/remove_accounts.rb
+index 3a8d387aba03628ace168aa760c5462c1e075fee..9bfef78b9167da792af9de83404201c9b786abde 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/remove_accounts.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/remove_accounts.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/selinux.rb b/files/gitlab-cookbooks/gitlab/recipes/selinux.rb
+index 0e22d7339bfe86c0120267b4b1b14e2f175887b8..0128829c9d883a835b7a3e6e77774ec6957679ec 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/selinux.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/selinux.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/show_config.rb b/files/gitlab-cookbooks/gitlab/recipes/show_config.rb
+index 91f9e1007c8fed8fffbda5826cf4e294b43f52bf..c0cd0a97987013752732d8f009e7d7ae0561fac8 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/show_config.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/show_config.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/sidekiq.rb b/files/gitlab-cookbooks/gitlab/recipes/sidekiq.rb
+index d858e7371ebed98073854f88ade9b5b8b971d5bf..e4f30fb4432285635b879e829044b1d36851823c 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/sidekiq.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/sidekiq.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/sidekiq_disable.rb b/files/gitlab-cookbooks/gitlab/recipes/sidekiq_disable.rb
+index 91658ef699b81914b8326422e75e2aa8f899b9c3..de8dd54cb6f3f9ecdf412ee0a1d8102e881d2558 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/sidekiq_disable.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/sidekiq_disable.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/users.rb b/files/gitlab-cookbooks/gitlab/recipes/users.rb
+index 6609e917fcff1ba918bfc40b9607e4f716326903..1ada1c0d36c82eefa1e06ae61ae31ac128d2c256 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/users.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/users.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/gitlab/recipes/web-server.rb b/files/gitlab-cookbooks/gitlab/recipes/web-server.rb
+index b04178320377ce5697b8ffe1a7c78b14feafd302..db3501ba220fcd8948d3fb1116e30248bde1e285 100644
+--- a/files/gitlab-cookbooks/gitlab/recipes/web-server.rb
++++ b/files/gitlab-cookbooks/gitlab/recipes/web-server.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/logrotate/recipes/disable.rb b/files/gitlab-cookbooks/logrotate/recipes/disable.rb
+index a5a69b4fe3671483912d3197b4b46df5f39546f4..088a0597d2b8ab01f0481112278ef8394127f41b 100644
+--- a/files/gitlab-cookbooks/logrotate/recipes/disable.rb
++++ b/files/gitlab-cookbooks/logrotate/recipes/disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/logrotate/recipes/enable.rb b/files/gitlab-cookbooks/logrotate/recipes/enable.rb
+index 2a903a0daa6c35fb6bb220e1573135b62c2f660b..9f1074adc32c559327371974ee8a69d891b6a290 100644
+--- a/files/gitlab-cookbooks/logrotate/recipes/enable.rb
++++ b/files/gitlab-cookbooks/logrotate/recipes/enable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/logrotate/recipes/folders_and_configs.rb b/files/gitlab-cookbooks/logrotate/recipes/folders_and_configs.rb
+index aad62da06657603124ddd43918c262392a8c78be..067aaa5967cd05cb9c284669a1741ae1c88fc962 100644
+--- a/files/gitlab-cookbooks/logrotate/recipes/folders_and_configs.rb
++++ b/files/gitlab-cookbooks/logrotate/recipes/folders_and_configs.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/mattermost/recipes/disable.rb b/files/gitlab-cookbooks/mattermost/recipes/disable.rb
+index 48aafd11c8f1ef11f65372fecb2d9726fb210764..6688ae34c4c52bfc1797bc1bdfb6ad3d556d4a9a 100644
+--- a/files/gitlab-cookbooks/mattermost/recipes/disable.rb
++++ b/files/gitlab-cookbooks/mattermost/recipes/disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/mattermost/recipes/enable.rb b/files/gitlab-cookbooks/mattermost/recipes/enable.rb
+index 3091215f73cd5e382668a6a8be0b834e5ceac3e7..99b4286a34d5377c47010b41991e3cb6f37167e1 100644
+--- a/files/gitlab-cookbooks/mattermost/recipes/enable.rb
++++ b/files/gitlab-cookbooks/mattermost/recipes/enable.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/monitoring/recipes/node-exporter_disable.rb b/files/gitlab-cookbooks/monitoring/recipes/node-exporter_disable.rb
+index f0f22e008c5df501b80b0a80630c895a7a422226..0c06a26fd87386500bf0d701315610de3e97ef89 100644
+--- a/files/gitlab-cookbooks/monitoring/recipes/node-exporter_disable.rb
++++ b/files/gitlab-cookbooks/monitoring/recipes/node-exporter_disable.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/package/recipes/runit_systemd.rb b/files/gitlab-cookbooks/package/recipes/runit_systemd.rb
+index 7e7b43feaf27e75fe910b883c723ad77afadc375..f18fa9e3af15796cc04b3120330b5f6dfaab5112 100644
+--- a/files/gitlab-cookbooks/package/recipes/runit_systemd.rb
++++ b/files/gitlab-cookbooks/package/recipes/runit_systemd.rb
+@@ -2,7 +2,7 @@
+ # Cookbook Name:: package
+ # Recipe:: runit_systemd
+ #
+-# Copyright 2014 GitLab B.V.
++# Copyright 2014 GitLab Inc.
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+diff --git a/files/gitlab-cookbooks/package/recipes/runit_sysvinit.rb b/files/gitlab-cookbooks/package/recipes/runit_sysvinit.rb
+index 2199ee3584847ac27b1a60e8b9edd067b79aee5e..fc2146f59d4a2b9dfe1ccbba185cf459b4fd66d1 100644
+--- a/files/gitlab-cookbooks/package/recipes/runit_sysvinit.rb
++++ b/files/gitlab-cookbooks/package/recipes/runit_sysvinit.rb
+@@ -3,7 +3,7 @@
+ # Recipe:: runit_sysvinit
+ #
+ # Copyright 2011, Opscode, Inc.
+-# Copyright 2014 GitLab.com
++# Copyright 2014 GitLab Inc.
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+diff --git a/files/gitlab-cookbooks/package/recipes/runit_upstart.rb b/files/gitlab-cookbooks/package/recipes/runit_upstart.rb
+index a45403130ec98f0a6bc7c31c9336b32ddc505631..0dbc5e323174c9973735ef40f0de1068fa8f13f1 100644
+--- a/files/gitlab-cookbooks/package/recipes/runit_upstart.rb
++++ b/files/gitlab-cookbooks/package/recipes/runit_upstart.rb
+@@ -3,7 +3,7 @@
+ # Recipe:: runit_upstart
+ #
+ # Copyright 2008-2010, Opscode, Inc.
+-# Copyright 2014 GitLab.com
++# Copyright 2014 GitLab Inc.
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+diff --git a/files/gitlab-cookbooks/postgresql/recipes/enable.rb b/files/gitlab-cookbooks/postgresql/recipes/enable.rb
+index fa0aa0f26fdde751e86c6056f1dc4583637a2dfe..8292d91be4fa92c42bd0a8af8449c8d210255cc5 100644
+--- a/files/gitlab-cookbooks/postgresql/recipes/enable.rb
++++ b/files/gitlab-cookbooks/postgresql/recipes/enable.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/praefect/recipes/database_migrations.rb b/files/gitlab-cookbooks/praefect/recipes/database_migrations.rb
+index 3a3d3c7e2320b3e588ef3b3d00e4c92854fcec32..e77a523077931e037f24fb651ed6691b7e771a71 100644
+--- a/files/gitlab-cookbooks/praefect/recipes/database_migrations.rb
++++ b/files/gitlab-cookbooks/praefect/recipes/database_migrations.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2020 GitLab.com
++# Copyright:: Copyright (c) 2020 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/praefect/recipes/disable.rb b/files/gitlab-cookbooks/praefect/recipes/disable.rb
+index 7376248e870d4789afed67d0405bf0fcb764cc57..b8f56944c17e81c8ffa6aed377292129c80ad282 100644
+--- a/files/gitlab-cookbooks/praefect/recipes/disable.rb
++++ b/files/gitlab-cookbooks/praefect/recipes/disable.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2019 GitLab B.V.
++# Copyright:: Copyright (c) 2019 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/redis/recipes/disable.rb b/files/gitlab-cookbooks/redis/recipes/disable.rb
+index 793095a5a3be596253ecbce7563047a99dcf4102..617ae58767e0bf728e64523a0c119c77dd342540 100644
+--- a/files/gitlab-cookbooks/redis/recipes/disable.rb
++++ b/files/gitlab-cookbooks/redis/recipes/disable.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-cookbooks/redis/recipes/enable.rb b/files/gitlab-cookbooks/redis/recipes/enable.rb
+index d25dcfd1e8fb3fce34d1a28a6b199a323a7cb29d..ff2f9bc4399522e3d86f99e0fc45c4b9e4c79008 100644
+--- a/files/gitlab-cookbooks/redis/recipes/enable.rb
++++ b/files/gitlab-cookbooks/redis/recipes/enable.rb
+@@ -1,6 +1,6 @@
+ #
+ # Copyright:: Copyright (c) 2012 Opscode, Inc.
+-# Copyright:: Copyright (c) 2014 GitLab.com
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-ctl-commands/deploy_page.rb b/files/gitlab-ctl-commands/deploy_page.rb
+index cfafee964216b24c40a801e8d521183b6cf3238d..33737475986a5a88a98b75957e304386bfc16023 100644
+--- a/files/gitlab-ctl-commands/deploy_page.rb
++++ b/files/gitlab-ctl-commands/deploy_page.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-ctl-commands/remove_accounts.rb b/files/gitlab-ctl-commands/remove_accounts.rb
+index 4cb9fba20fe7760a11a93dfc85584c5f8e75c99a..db1e4db5e483ff5a187a36c62d21318126fc6730 100644
+--- a/files/gitlab-ctl-commands/remove_accounts.rb
++++ b/files/gitlab-ctl-commands/remove_accounts.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-ctl-commands/restart_except.rb b/files/gitlab-ctl-commands/restart_except.rb
+index ea9e8afebfa7a95bab3e5deb19d86cd9f008b42c..7188c6fe91e9b14735113272c622d0e284561c17 100644
+--- a/files/gitlab-ctl-commands/restart_except.rb
++++ b/files/gitlab-ctl-commands/restart_except.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2014 GitLab B.V.
++# Copyright:: Copyright (c) 2014 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+diff --git a/files/gitlab-ctl-commands/upgrade.rb b/files/gitlab-ctl-commands/upgrade.rb
+index 78e2342304b44d8d868dd0db7a4071597bb323fb..ca1c704eec76a943e79400f39f14b2249f2dd984 100644
+--- a/files/gitlab-ctl-commands/upgrade.rb
++++ b/files/gitlab-ctl-commands/upgrade.rb
+@@ -1,5 +1,5 @@
+ #
+-# Copyright:: Copyright (c) 2015 GitLab B.V.
++# Copyright:: Copyright (c) 2015 GitLab Inc.
+ # License:: Apache License, Version 2.0
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
